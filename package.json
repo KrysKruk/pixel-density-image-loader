@@ -1,0 +1,58 @@
+{
+  "name": "pixel-density-image-loader",
+  "version": "0.0.0",
+  "description": "Webpack plugin to load and resize images with pixel density",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "echo 'Build' && tsc",
+    "watch": "npm-watch",
+    "prepublishOnly": "npm run build"
+  },
+  "watch": {
+    "build": {
+      "patterns": [
+        "src"
+      ],
+      "extensions": "ts",
+      "quiet": false
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KrysKruk/pixel-density-image-loader.git"
+  },
+  "keywords": [
+    "webpack",
+    "plugin",
+    "image",
+    "pixel"
+  ],
+  "author": {
+    "name": "Krystian Kruk",
+    "email": "kildyt@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KrysKruk/pixel-density-image-loader/issues"
+  },
+  "homepage": "https://github.com/KrysKruk/pixel-density-image-loader#readme",
+  "dependencies": {
+    "@types/json-schema": "^7.0.4",
+    "@types/loader-utils": "^1.1.3",
+    "@types/node": "^13.5.0",
+    "@types/sharp": "^0.24.0",
+    "@types/webpack": "^4.41.3",
+    "json-schema": "^0.2.5",
+    "loader-utils": "^1.2.3",
+    "schema-utils": "^2.6.4",
+    "sharp": "^0.24.0"
+  },
+  "peerDependencies": {
+    "webpack": "^4.41.5"
+  },
+  "devDependencies": {
+    "npm-watch": "^0.6.0",
+    "typescript": "^3.7.5"
+  }
+}
